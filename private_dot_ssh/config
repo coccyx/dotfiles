@@ -1,0 +1,6 @@
+Host homelab.local
+    
+Host clint-linux
+#    HostName 100.72.188.16
+#    HostName clint-linux.local
+    HostName 192.168.68.96
