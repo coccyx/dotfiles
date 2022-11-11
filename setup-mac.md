@@ -26,3 +26,7 @@
 1. Set keyboard shortcut for moving virtual desktops and expose in Keyboard>Shortcuts>Mission Control and shortcut
 1. Open Docker
 1. Open Logi Options, setup, including Natural Scoll on mouse
+1. Run ssh-keygen
+1. Use ssh-copy-id to add ssh keys to local machines
+1. Login to GitHub
+1. `chezmoi cd; git remote set-url origin git@github.com:coccyx/dotfiles.git`
