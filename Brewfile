@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
+tap "homebrew/cask-drivers"
 brew "bash"
 brew "chezmoi"
 brew "kubectx"
@@ -21,17 +22,19 @@ mas "Vector Converter", id: 1082712391
 mas "WiFi Explorer", id: 494803304
 brew 'bat'
 brew 'jq'
+brew 'bash-completion'
 cask 'screenflow'
 cask 'discord'
 cask 'docker'
 cask 'dropbox'
 cask 'firefox'
-cask 'google-chrome'
+# cask 'google-chrome'
 cask 'iterm2'
 cask 'microsoft-edge'
-cask 'slack'
+# cask 'slack'
 cask 'spotify'
 cask 'visual-studio-code'
 cask 'zoom'
 cask 'signal'
 cask 'rectangle'
+cask 'logitech-options'
