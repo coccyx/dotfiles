@@ -29,4 +29,7 @@
 1. Run ssh-keygen
 1. Use ssh-copy-id to add ssh keys to local machines
 1. Login to GitHub
+1. `/opt/homebrew/bin/chezmoi init --apply coccyx`
 1. `chezmoi cd; git remote set-url origin git@github.com:coccyx/dotfiles.git`
+1. `sudo echo "/opt/homebrew/bin/bash" >> /etc/shells`
+1. `chsh -s /opt/homebrew/bin/bash`
