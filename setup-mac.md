@@ -6,7 +6,7 @@
 1. Set Dock size and Zoom
 1. Setup TouchID
 1. Run System Update to latest patch level
-1. Grab and run setup-mac.sh from https://github.com/coccyx/dotfiles/main/setup-mac.sh
+1. `curl -o setup-mac.sh https://raw.githubusercontent.com/coccyx/dotfiles/main/executable_setup-mac.sh && bash ./setup-mac.sh`
 1. Login to 1Password
 1. Open Dropbox, login
 1. Open accessibility, enable Dropbox and zoom.us
