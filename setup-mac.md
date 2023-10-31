@@ -15,7 +15,7 @@
 1. `echo "/opt/homebrew/bin/bash" | sudo tee -a /etc/shells`
 1. `chsh -s /opt/homebrew/bin/bash`
 1. Enable iCloud Drive in Settings>User(Clint Sharp)>iCloud>iCloud Drive
-1. Open Arc, enable syncing (`Cmd ,`)
+1. Open Arc, enable syncing (`Cmd ,`), Add to Dock at position 3
 1. Open Rectangle
   1. Authorize accessibility
 1. Login to 1Password
