@@ -13,7 +13,8 @@
 1. `/opt/homebrew/bin/chezmoi init --apply coccyx`
 1. `/opt/homebrew/bin/chezmoi cd; git remote set-url origin git@github.com:coccyx/dotfiles.git`
 1. `echo "/opt/homebrew/bin/bash" | sudo tee -a /etc/shells`
-1. `chsh -s /opt/homebrew/bin/bash`   
+1. `chsh -s /opt/homebrew/bin/bash`
+1. Enable iCloud Drive in Settings>User(Clint Sharp)>iCloud>iCloud Drive 
 1. Login to 1Password
 1. Open Dropbox, login
 1. Open accessibility, enable Dropbox and zoom.us
