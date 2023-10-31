@@ -15,22 +15,16 @@
 1. `echo "/opt/homebrew/bin/bash" | sudo tee -a /etc/shells`
 1. `chsh -s /opt/homebrew/bin/bash`
 1. Enable iCloud Drive in Settings>User(Clint Sharp)>iCloud>iCloud Drive
+1. Enable System Preferences>Internet Accounts>Icloud Drive Options>Documents & Desktop
 1. Open Arc, enable syncing (`Cmd ,`), Add to Dock at position 3
 1. Open Rectangle
   1. Authorize accessibility
 1. Login to 1Password
 1. Open Dropbox, login
 1. Open accessibility, enable Dropbox and zoom.us
-1. Open Edge, make it the default browser
-  1. Open settings, search for vertical tabs, turn on
-  1. System Preferences, search for default browser, set to Edge
-  1. Login to gmail and google calendar, pin tabs
-  1. Login to gmail from personal email address
-  1. Move Edge to right place on Dock
 1. Login to Slack
   1. Signin to work and personal emails
 1. Open Signal
-1. Enable System Preferences>Internet Accounts>Icloud Drive Options>Documents & Desktop
 1. Open iterm>General>Preferences>Custom location -> ~/.config/iterm2
 1. Open Spotify & login
 1. Open Self Service & install Office & Teams
