@@ -26,6 +26,7 @@
   1. Signin to work and personal emails
 1. Open Signal
 1. Open iterm>General>Preferences>Custom location -> ~/.config/iterm2
+1. Update iterm2 Settings>Profile>Text>Font Size to 14
 1. Open Spotify & login
 1. Open Self Service & install Office & Teams
 1. Open Tailscale and login to personal email
