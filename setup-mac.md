@@ -7,6 +7,13 @@
 1. Setup TouchID
 1. Run System Update to latest patch level
 1. `curl -o setup-mac.sh https://raw.githubusercontent.com/coccyx/dotfiles/main/executable_setup-mac.sh && bash ./setup-mac.sh`
+1. Run ssh-keygen
+1. Use ssh-copy-id to add ssh keys to local machines
+1. Login to GitHub
+1. `/opt/homebrew/bin/chezmoi init --apply coccyx`
+1. `/opt/homebrew/bin/chezmoi cd; git remote set-url origin git@github.com:coccyx/dotfiles.git`
+1. `echo "/opt/homebrew/bin/bash" | sudo tee -a /etc/shells`
+1. `chsh -s /opt/homebrew/bin/bash`   
 1. Login to 1Password
 1. Open Dropbox, login
 1. Open accessibility, enable Dropbox and zoom.us
@@ -29,10 +36,3 @@
 1. Set keyboard shortcut for moving virtual desktops and expose in Keyboard>Shortcuts>Mission Control and shortcut
 1. Open Docker
 1. Open Logi Options, setup, including Natural Scoll on mouse
-1. Run ssh-keygen
-1. Use ssh-copy-id to add ssh keys to local machines
-1. Login to GitHub
-1. `/opt/homebrew/bin/chezmoi init --apply coccyx`
-1. `chezmoi cd; git remote set-url origin git@github.com:coccyx/dotfiles.git`
-1. `sudo echo "/opt/homebrew/bin/bash" >> /etc/shells`
-1. `chsh -s /opt/homebrew/bin/bash`
