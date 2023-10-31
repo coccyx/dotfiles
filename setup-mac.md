@@ -14,7 +14,10 @@
 1. `/opt/homebrew/bin/chezmoi cd; git remote set-url origin git@github.com:coccyx/dotfiles.git`
 1. `echo "/opt/homebrew/bin/bash" | sudo tee -a /etc/shells`
 1. `chsh -s /opt/homebrew/bin/bash`
-1. Enable iCloud Drive in Settings>User(Clint Sharp)>iCloud>iCloud Drive 
+1. Enable iCloud Drive in Settings>User(Clint Sharp)>iCloud>iCloud Drive
+1. Open Arc, enable syncing (`Cmd ,`)
+1. Open Rectangle
+  1. Authorize accessibility
 1. Login to 1Password
 1. Open Dropbox, login
 1. Open accessibility, enable Dropbox and zoom.us
@@ -26,8 +29,6 @@
   1. Move Edge to right place on Dock
 1. Login to Slack
   1. Signin to work and personal emails
-1. Open Rectangle
-  1. Authorize accessibility
 1. Open Signal
 1. Enable System Preferences>Internet Accounts>Icloud Drive Options>Documents & Desktop
 1. Open iterm>General>Preferences>Custom location -> ~/.config/iterm2
