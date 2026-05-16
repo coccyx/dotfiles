@@ -1,0 +1,13 @@
+{
+  "editor.accessibilitySupport": "off",
+  "editor.fontSize": 11,
+  "terminal.integrated.macOptionIsMeta": true,
+  "go.toolsManagement.autoUpdate": true,
+  "go.useLanguageServer": true,
+  "gopls": {
+    "experimentalWorkspaceModule": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
+}
