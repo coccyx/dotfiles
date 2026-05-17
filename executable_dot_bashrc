@@ -118,9 +118,6 @@ if ! shopt -oq posix; then
 fi
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
-# added by travis gem
-[ ! -s /Users/clint/.travis/travis.sh ] || source /Users/clint/.travis/travis.sh
-
 alias k=kubectl
 complete -F __start_kubectl k
 alias kctx=kubectx
@@ -138,6 +135,6 @@ function color_my_prompt {
 }
 color_my_prompt
 
-alias dc=docker-compose
+alias dc="docker compose"
 
-export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:/usr/local/opt/gnu-tar/libexec/gnubin:$PATH:$HOME/go/bin:/usr/local/sbin"
+export PATH="$PATH:$HOME/go/bin:/usr/local/sbin"
