@@ -53,7 +53,7 @@ set_hotkey 33 65535 125 11796480
 
 # --- Dock layout ---
 dockutil --remove all --no-restart
-dockutil --add /System/Applications/Launchpad.app --label "Apps" --no-restart
+dockutil --add /System/Applications/Apps.app --no-restart
 dockutil --add /Applications/Arc.app --no-restart
 dockutil --add /Applications/Safari.app --no-restart
 dockutil --add /System/Applications/Photos.app --no-restart
