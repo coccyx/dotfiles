@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 brew "bash"
+brew "dockutil"
 brew "bash-completion"
 brew "bat"
 brew "chezmoi"

@@ -19,8 +19,7 @@
 
 ## iCloud & Sync
 
-1. Enable iCloud Drive in Settings > User (Clint Sharp) > iCloud > iCloud Drive
-1. Enable Settings > Internet Accounts > iCloud Drive Options > Documents & Desktop
+1. System Settings > Apple ID > iCloud > sign in if not already
 
 ## App logins & configuration
 
