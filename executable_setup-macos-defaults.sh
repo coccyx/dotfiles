@@ -15,41 +15,41 @@ defaults write com.apple.dock magnification -bool true
 defaults write com.apple.dock largesize -int 93
 
 # --- Keyboard: Mission Control shortcuts ---
+HOTKEYS=~/Library/Preferences/com.apple.symbolichotkeys.plist
+
+set_hotkey() {
+    local key=$1 param0=$2 param1=$3 param2=$4
+    /usr/libexec/PlistBuddy \
+        -c "Delete :AppleSymbolicHotKeys:${key}" \
+        -c "Add :AppleSymbolicHotKeys:${key}:enabled bool true" \
+        -c "Add :AppleSymbolicHotKeys:${key}:value:type string standard" \
+        -c "Add :AppleSymbolicHotKeys:${key}:value:parameters array" \
+        -c "Add :AppleSymbolicHotKeys:${key}:value:parameters:0 integer ${param0}" \
+        -c "Add :AppleSymbolicHotKeys:${key}:value:parameters:1 integer ${param1}" \
+        -c "Add :AppleSymbolicHotKeys:${key}:value:parameters:2 integer ${param2}" \
+        "$HOTKEYS" 2>/dev/null || \
+    /usr/libexec/PlistBuddy \
+        -c "Add :AppleSymbolicHotKeys:${key}:enabled bool true" \
+        -c "Add :AppleSymbolicHotKeys:${key}:value:type string standard" \
+        -c "Add :AppleSymbolicHotKeys:${key}:value:parameters array" \
+        -c "Add :AppleSymbolicHotKeys:${key}:value:parameters:0 integer ${param0}" \
+        -c "Add :AppleSymbolicHotKeys:${key}:value:parameters:1 integer ${param1}" \
+        -c "Add :AppleSymbolicHotKeys:${key}:value:parameters:2 integer ${param2}" \
+        "$HOTKEYS"
+}
+
 # Move left a space: Ctrl+Left Arrow
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:79:enabled true" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:79:value:parameters:0 65535" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:79:value:parameters:1 123" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:79:value:parameters:2 11796480" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-
+set_hotkey 79 65535 123 11796480
 # Move left a space: Ctrl+Shift+Left Arrow
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:80:enabled true" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:80:value:parameters:0 65535" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:80:value:parameters:1 123" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:80:value:parameters:2 11927552" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-
+set_hotkey 80 65535 123 11927552
 # Move right a space: Ctrl+Right Arrow
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:81:enabled true" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:81:value:parameters:0 65535" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:81:value:parameters:1 124" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:81:value:parameters:2 11796480" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-
+set_hotkey 81 65535 124 11796480
 # Move right a space: Ctrl+Shift+Right Arrow
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:82:enabled true" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:82:value:parameters:0 65535" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:82:value:parameters:1 124" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:82:value:parameters:2 11927552" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-
+set_hotkey 82 65535 124 11927552
 # Mission Control: Ctrl+Up Arrow
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:32:enabled true" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:32:value:parameters:0 65535" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:32:value:parameters:1 126" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:32:value:parameters:2 11796480" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-
+set_hotkey 32 65535 126 11796480
 # Application windows (Expose): Ctrl+Down Arrow
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:33:enabled true" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:33:value:parameters:0 65535" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:33:value:parameters:1 125" ~/Library/Preferences/com.apple.symbolichotkeys.plist
-/usr/libexec/PlistBuddy -c "Set :AppleSymbolicHotKeys:33:value:parameters:2 11796480" ~/Library/Preferences/com.apple.symbolichotkeys.plist
+set_hotkey 33 65535 125 11796480
 
 # --- Finder: use list view ---
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"

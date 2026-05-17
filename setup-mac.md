@@ -6,14 +6,16 @@
 1. Sign into Apple ID & App Store
 1. Run System Update to latest patch level
 1. `curl -o setup-mac.sh https://raw.githubusercontent.com/coccyx/dotfiles/main/executable_setup-mac.sh && bash ./setup-mac.sh`
+1. Open 1Password, login
+1. Login to GitHub via `gh auth login`
+1. Open Tailscale and login to personal email
 1. Run ssh-keygen
 1. Use ssh-copy-id to add ssh keys to local machines
-1. Login to GitHub via `gh auth login`
 1. `/opt/homebrew/bin/chezmoi init --apply coccyx`
 1. `/opt/homebrew/bin/chezmoi cd; git remote set-url origin git@github.com:coccyx/dotfiles.git`
 1. `echo "/opt/homebrew/bin/bash" | sudo tee -a /etc/shells`
 1. `chsh -s /opt/homebrew/bin/bash`
-1. `bash ~/local/src/dotfiles/executable_setup-macos-defaults.sh`
+1. `bash ~/.local/share/chezmoi/executable_setup-macos-defaults.sh`
 
 ## iCloud & Sync
 
