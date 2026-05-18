@@ -34,7 +34,7 @@
 1. Open Spotify & login
 1. Open Tailscale and login to personal email
 1. Open Docker
-1. Open Logi Options, setup, including Natural Scroll on mouse
+1. Open Logi Options+, setup, including Natural Scroll on mouse
 1. Open Ollama
 1. Open Obsidian, open vault at ~/Vaults/Notes
 1. Open Self Service & install Office & Teams

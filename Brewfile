@@ -24,7 +24,7 @@ cask "firefox"
 cask "ghostty"
 cask "google-chrome"
 cask "iterm2"
-cask "logitech-options"
+cask "logi-options-plus"
 cask "microsoft-edge"
 cask "moonlight"
 cask "multipass"
@@ -38,7 +38,6 @@ cask "spotify"
 cask "visual-studio-code"
 cask "vlc"
 cask "vnc-viewer"
-cask "zoom"
 mas "1Password for Safari", id: 1569813296
 mas "Adobe Lightroom", id: 1451544217
 mas "Disk Space Analyzer", id: 446243721
